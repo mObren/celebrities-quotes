@@ -1,0 +1,83 @@
+
+fieldset {
+    margin-bottom: 40px;
+    border-top: 1px solid #888;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+}
+
+.input-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.input-group:last-of-type {
+    border-bottom: 0;
+}
+
+.input-group > label {
+    font-weight: bold;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[type="text"], input[type="url"], input[type="email"], input[type="date"], .input-group > select {
+    min-width: 320px;
+}
+
+.input-group > .inline-options, .input-group > .block-options {
+    display: inline-block;
+}
+
+.inline-options > label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block-options > label {
+    display: block;
+    vertical-align: middle;
+}
+
+.form-footer {
+    text-align: right;
+}
+
+.form-footer > button[type="submit"] {
+    padding: 10px;
+    border: 1px solid #006600;
+    background-color: #22aa22;
+    color: white;
+}
+
+.form-footer > button[type="reset"] {
+    padding: 10px;
+    border: 1px solid #888;
+    background-color: #eee;
+}
+
+@media (max-width: 420px) {
+
+    input[type="text"], input[type="url"], input[type="email"], input[type="date"], .input-group > select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .input-group > .inline-options, .input-group > .block-options {
+        display: block;
+    }
+}
